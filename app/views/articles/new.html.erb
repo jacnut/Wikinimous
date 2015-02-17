@@ -1,0 +1,13 @@
+<h1>New Article</h1>
+<p>Write a new article for our Wikinimous</p>
+
+
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.submit %>
+<% end %>
